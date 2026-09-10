@@ -21,13 +21,23 @@ Real: the formulas, the scenario assumptions, and the rule logic, all pulled fro
 | Stress tab | Same book under a severe recession (unemployment 10%, GDP -7.8%, equities -50%) |
 | Basel III Endgame tab | The two new capital charges Endgame adds, compared across current rules and both Endgame versions |
 
+## What I actually figured out
+ 
+Two things stood out while building this.
+ 
+**First, the $0 RWA.** At baseline, four repo transactions and three indemnified securities financing transactions, some of the largest dollar amounts in the whole book carry exactly $0 in RWA. Not because they're low-risk on paper, but because they're collateralized slightly above 100%, so once you subtract collateral from exposure there's nothing left to charge capital against. Meanwhile three small unsecured loans, tiny by comparison, end up driving nearly half of total RWA. It made the core idea click for me: capital requirements track how well a position is collateralized, not how big it is. And that "free" treatment only holds up when markets are calm and run the same book through a stress scenario and the equity shock take into that collateral cushion, and the RWA comes right back.
+ 
+**Second, why State Street pushed back on the original Endgame proposal.** At first, I assumed Endgame would just tweak existing risk weights, which turned out to be wrong. It actually adds a brand new charge: Operational Risk RWA, calculated off something called the Business Indicator, which is built mostly from fee income rather than lending activity. That matters a lot for a custody bank like State Street, which makes most of its money from fees, not interest. The 2023 draft measured that fee income on a gross basis (income plus expenses, no netting), which hits a fee heavy bank especially hard. State Street flagged this directly in its own filings.
+ 
+The 2026 re-proposal doesn't get rid of the charge. It's still there and Endgame is still net-net a bigger capital burden than today's rules. But it does soften this one piece, letting fee income be measured net instead of gross, and that single change moved my model's stressed ratio from 4.7% (uncomfortably close to the 4.5% floor) up to 5.1%. Nothing about the underlying business changed, just the accounting treatment of one input. That's the part that made this proposal feel less like regulators backing off and more like regulators listening to one very specific, well-argued complaint.
+ 
 ## The headline finding
-
-Both Endgame versions leave this mock bank worse off than current Basel III — that's expected, since Endgame adds new charges rather than removing anything. What's interesting is how much worse, and why.
-
-Under the 2023 draft, the stressed ratio falls to 4.7%, just 0.2 points above the regulatory floor. Under the 2026 re-proposal, the same stress scenario lands at 5.1%, a noticeably bigger buffer. Nothing about the portfolio changes between those two numbers — the entire swing comes from one accounting choice, whether fee income is measured gross or net of expenses.
-
-That's why a fee-heavy institution like State Street cares so specifically about this one detail, more than about Basel III Endgame in general.
+ 
+Both Endgame versions leave this mock bank worse off than current Basel III which expected, since Endgame adds new charges rather than removing anything. What's interesting is how much worse, and why.
+ 
+Under the 2023 draft, the stressed ratio falls to 4.7%, just 0.2 points above the regulatory floor. Under the 2026 re-proposal, the same stress scenario lands at 5.1%, a noticeably bigger buffer. Nothing about the portfolio changes between those two numbers. The entire swing comes from one accounting choice: whether fee income is measured gross or net of expenses.
+ 
+That's what institution like State Street will care in more details , more than about Basel III Endgame in general.
 
 ## Screenshots & charts
 
