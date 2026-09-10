@@ -35,6 +35,8 @@ At first I assumed Endgame would just adjust existing risk weights. That turned 
 
 The 2026 re proposal doesn't remove the charge. It's still there, and Endgame is still, on net, a bigger capital burden than today's rules. But it does soften this one piece, allowing fee income to be measured net instead of gross. That single change moved my model's stressed ratio from 4.7 percent, uncomfortably close to the 4.5 percent floor, up to 5.1 percent. Nothing about the underlying business changed. Only the accounting treatment of one input did. That's what made this proposal feel less like regulators backing off, and more like regulators responding to one specific.
 
+![RWA by category and scenario, with the Endgame framework reconciliation check](Rwa%20summary%20reconciliation%20table.png)
+
 ## The headline finding
 
 Both Endgame versions leave this mock bank worse off than current Basel III rules, which is expected, since Endgame adds two new charges rather than removing anything: Operational Risk RWA and a CVA charge on derivatives. What's more interesting is how much worse, and why.
@@ -42,6 +44,8 @@ Both Endgame versions leave this mock bank worse off than current Basel III rule
 Under the 2023 draft, the stressed ratio falls to 4.7 percent, just 0.2 points above the regulatory floor. Under the 2026 re proposal, the same stress scenario lands at 5.1 percent, a noticeably larger buffer. The CVA charge is identical in both versions, so it is not what moves the number. The entire swing between 4.7 and 5.1 comes from one accounting choice inside the Operational Risk charge: whether fee income is measured gross or net of expenses. Worth noting separately, the baseline ratio also shifts between the two versions, 8.0 percent under the 2023 draft versus 9.1 percent under 2026, for the same reason, since the Operational Risk charge applies whether or not the bank is under stress.
 
 That is the detail an institution like State Street will care about most, more than the broader shape of Basel III Endgame.
+
+![Stressed RWA and CET1 ratio, current rules versus both Endgame versions](Rwa%20framework%20comparison%20table.png)
 
 ## The math behind it
 
