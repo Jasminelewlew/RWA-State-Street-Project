@@ -47,11 +47,11 @@ Everything runs off two formulas, the standard Basel approach for collateralized
  
 **E\* = MAX(0, Exposure − Collateral × (1 − Haircut))**
  
-That's the exposure actually at risk, whatever's left after subtracting the collateral you hold, discounted a bit for the haircut, since collateral can lose value before you're able to sell it.
+The actual exposure at risk, whatever's left after subtracting the collateral you hold, discounted the haircut, since collateral can lose value before you're able to sell it.
  
 **RWA = E\* × Risk Weight**
  
-The risk weight is just a regulator set multiplier for how risky that counterparty or collateral type is considered.
+The risk weight: regulator set multiplier for how risky that counterparty or collateral type is considered.
  
 Under stress, 3 things shift before those formulas run again: equity linked collateral gets cut by the equity shock (-50%), haircuts widen by 5 points, and risk weights climb by 10 points.
  
@@ -59,7 +59,8 @@ For the Basel III Endgame side, the new Operational Risk charge is:
  
 **Operational Risk RWA = 12.5 × Business Indicator × Marginal Coefficient × Internal Loss Multiplier**
  
-where the Business Indicator is just interest income + services income + financial income, and the only thing that changes between the 2023 draft and the 2026 re-proposal is whether the services leg nets out fee expenses or not.
+Business Indicator: interest income + services income + financial income
+The changes between the 2023 draft and the 2026 re-proposal is whether the services leg nets out fee expenses or not.
  
 ## Sources
  
