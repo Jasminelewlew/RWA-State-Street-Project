@@ -4,8 +4,6 @@
 
 This is a small project I built to understand how a bank turns a portfolio of trades into a capital ratio. I created a fictional trading and financing book shaped like State Street Markets' real business, then worked through how much regulatory capital it would need to hold: first on a normal day, then in a severe recession, and finally under a new set of capital rules regulators are proposing (Basel III Endgame).
 
-Reading about RWA and CET1 on their own wasn't enough for me to actually understand how they work. Building the numbers myself was.
-
 ## What's fictional versus real
 
 Fictional: the repo, derivatives, loans, securitizations, and indemnified securities financing positions.
